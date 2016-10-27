@@ -61,7 +61,7 @@ before_install:
     - if [ "$TRAVIS_OS_NAME" == "osx" ] && [[ $BOND_LANG == py* ]]; then brew unlink boost; fi
     - if [ "$TRAVIS_OS_NAME" == "osx" ] && [[ $BOND_LANG == py* ]]; then brew unlink python; fi
     - if [ "$TRAVIS_OS_NAME" == "osx" ] && [[ $BOND_LANG == py* ]]; then brew install python; fi
-    - if [ "$TRAVIS_OS_NAME" == "osx" ] && [[ $BOND_LANG == py* ]]; then brew install boost boost-python; fi
+    - if [ "$TRAVIS_OS_NAME" == "osx" ] && [[ $BOND_LANG == py* ]]; then brew install homebrew/versions/boost160 --with-python; fi
     # nunit installation
     - if [ "$BOND_LANG" == "cs" ]; then travis_retry nuget install NUnit.Runners -version 2.6.4; fi
     - export PATH=/opt/cabal/1.22/bin:/opt/ghc/${BOND_GHC_VERSION#?}/bin:$PATH
