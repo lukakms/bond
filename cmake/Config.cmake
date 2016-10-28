@@ -73,6 +73,13 @@ cxx_add_compile_options(Clang
     -Wno-unknown-warning-option
     -Wno-unused-local-typedefs)
 
+cxx_add_compile_options(AppleClang
+    -fPIC
+    -Wall
+    -Werror
+    -Wno-unknown-warning-option
+    -Wno-unused-local-typedefs)
+
 cxx_add_compile_options(GNU
     -fPIC
     -Wall
