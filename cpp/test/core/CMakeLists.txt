@@ -97,3 +97,22 @@ add_unit_test_library (unit_test_lib2
 add_unit_test_library (unit_test_lib3
     numeric_convertions.cpp)
 
+add_unit_test_library (unit_test_lib4
+    generics_test.cpp
+    merge_test.cpp)
+
+add_unit_test_library (unit_test_lib5
+    list_tests.cpp
+    serialization_test.cpp
+    allocator_test.cpp
+    set_tests.cpp
+    basic_type_lists.cpp
+    nullable.cpp)
+
+add_unit_test_library (unit_test_lib6
+    marshal.cpp
+    container_extensibility.cpp
+    basic_type_map.cpp
+    enum_convertions.cpp
+    exception_tests.cpp
+    maybe_tests.cpp)
