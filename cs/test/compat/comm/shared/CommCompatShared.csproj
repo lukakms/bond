@@ -31,13 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bond">
-      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.dll</HintPath>
+      <HintPath>..\..\src\core\$(OutputPath)\Bond.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Attributes">
-      <HintPath>..\..\src\attributes\$(DependentOutputPath)\Bond.Attributes.dll</HintPath>
+      <HintPath>..\..\src\attributes\$(OutputPath)\Bond.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Interfaces">
-      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Interfaces.dll</HintPath>
+      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>

@@ -32,22 +32,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bond">
-      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.dll</HintPath>
+      <HintPath>..\..\src\core\$(OutputPath)\Bond.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Attributes">
-      <HintPath>..\..\src\attributes\$(DependentOutputPath)\Bond.Attributes.dll</HintPath>
+      <HintPath>..\..\src\attributes\$(OutputPath)\Bond.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Epoxy">
-      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Epoxy.dll</HintPath>
+      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Epoxy.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Interfaces">
-      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Interfaces.dll</HintPath>
+      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Layers">
-      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Layers.dll</HintPath>
+      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Layers.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Service">
-      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Service.dll</HintPath>
+      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Service.dll</HintPath>
     </Reference>
     <Reference Include="CommCompatShared">
       <HintPath>..\shared\obj\Debug\net45\CommCompatShared.dll</HintPath>
