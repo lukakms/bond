@@ -38,5 +38,5 @@
     <Compile Include="Program.cs" />
     <Compile Include="properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildThisFileDirectory)\..\..\..\..\build\internal\Common.Internal.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)\..\..\..\build\internal\Common.Internal.targets" />
 </Project>

@@ -27,7 +27,7 @@
       <HintPath>..\..\..\..\src\core\$(OutputPath)\Bond.Comm.Layers.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Service">
-      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Service.dll</HintPath>
+      <HintPath>..\..\..\..\src\core\$(OutputPath)\Bond.Comm.Service.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,5 +43,5 @@
     <!-- End Resharper Workaround -->
     <Compile Include="TestLayer.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildThisFileDirectory)\..\..\..\..\build\internal\Common.Internal.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)\..\..\..\build\internal\Common.Internal.targets" />
 </Project>
