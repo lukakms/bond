@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath32)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <Import Project="$(MSBuildThisFileDirectory)\..\..\..\..\build\internal\Common.Internal.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\..\..\..\build\internal\Common.Internal.props" />
   <PropertyGroup>
     <ProjectGuid>{EFDC5304-C12E-406A-9206-BC6F45766D86}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -11,22 +11,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bond">
-      <HintPath>..\..\src\core\$(OutputPath)\Bond.dll</HintPath>
+      <HintPath>..\..\..\..\src\core\$(OutputPath)\Bond.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Attributes">
-      <HintPath>..\..\src\attributes\$(OutputPath)\Bond.Attributes.dll</HintPath>
+      <HintPath>..\..\..\..\src\attributes\$(OutputPath)\Bond.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Epoxy">
-      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Epoxy.dll</HintPath>
+      <HintPath>..\..\..\..\src\core\$(OutputPath)\Bond.Comm.Epoxy.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Interfaces">
-      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Interfaces.dll</HintPath>
+      <HintPath>..\..\..\..\src\core\$(OutputPath)\Bond.Comm.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Layers">
-      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Layers.dll</HintPath>
+      <HintPath>..\..\..\..\src\core\$(OutputPath)\Bond.Comm.Layers.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Service">
-      <HintPath>..\..\src\core\$(OutputPath)\Bond.Comm.Service.dll</HintPath>
+      <HintPath>..\..\..\..\src\core\$(OutputPath)\Bond.Comm.Service.dll</HintPath>
     </Reference>
     <Reference Include="CommCompatShared">
       <HintPath>..\shared\obj\Debug\net45\CommCompatShared.dll</HintPath>
