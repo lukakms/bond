@@ -31,25 +31,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bond, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87e9ead25a117286, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\bin\debug\net45\Bond.dll</HintPath>
+    <Reference Include="Bond">
+      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Attributes">
-      <HintPath>..\..\..\..\bin\debug\net45\Bond.Attributes.dll</HintPath>
+      <HintPath>..\..\src\attributes\$(DependentOutputPath)\Bond.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Epoxy">
-      <HintPath>..\..\..\..\bin\debug\net45\Bond.Comm.Epoxy.dll</HintPath>
+      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Epoxy.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Interfaces">
-      <HintPath>..\..\..\..\bin\debug\net45\Bond.Comm.Interfaces.dll</HintPath>
+      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Bond.Comm.Layers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87e9ead25a117286, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\bin\debug\net45\Bond.Comm.Layers.dll</HintPath>
+    <Reference Include="Bond.Comm.Layers">
+      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Layers.dll</HintPath>
     </Reference>
     <Reference Include="Bond.Comm.Service">
-      <HintPath>..\..\..\..\bin\debug\net45\Bond.Comm.Service.dll</HintPath>
+      <HintPath>..\..\src\core\$(DependentOutputPath)\Bond.Comm.Service.dll</HintPath>
     </Reference>
     <Reference Include="CommCompatShared">
       <HintPath>..\shared\obj\Debug\net45\CommCompatShared.dll</HintPath>
