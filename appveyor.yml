@@ -79,6 +79,7 @@
     cache:
         - cs\packages -> cs\test\core\packages.config
         - compiler\.cabal-sandbox -> compiler\bond.cabal
+        - C:\ProgramData\chocolatey
 
     before_build:
         - ps: >-
