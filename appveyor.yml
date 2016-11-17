@@ -128,7 +128,6 @@
 
             }
 
-
     build_script:
         - ps: >-
             $env:PreferredToolArchitecture = "x64"
