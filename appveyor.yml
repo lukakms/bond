@@ -79,7 +79,8 @@
     cache:
         - cs\packages -> cs\test\core\packages.config
         - compiler\.cabal-sandbox -> compiler\bond.cabal
-        - C:\ProgramData\chocolatey
+        - C:\ProgramData\chocolatey\bin -> appveyor.yml
+        - C:\ProgramData\chocolatey\lib -> appveyor.yml
 
     before_build:
         - ps: >-
