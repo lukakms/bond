@@ -63,6 +63,8 @@
             choco install haskellplatform -version 2014.2.0.0 -y
 
             $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+            
+            $env:Path = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin;C:\Program Files\Haskell Platform\2014.2.0.0\bin;${env:Path}"
 
             cabal update
 
@@ -81,6 +83,7 @@
         - compiler\.cabal-sandbox -> compiler\bond.cabal
         - C:\ProgramData\chocolatey\bin -> appveyor.yml
         - C:\ProgramData\chocolatey\lib -> appveyor.yml
+        - C:\Program Files\Haskell Platform -> appveyor.yml
 
     before_build:
         - ps: >-
