@@ -71,6 +71,8 @@
             $Name = "InstallDir"
 
             $value = "C:\Program Files\Haskell Platform\2014.2.0.0"
+            
+            $env:CABAL_PATH = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin"
 
             New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
 
