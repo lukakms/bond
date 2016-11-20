@@ -241,7 +241,7 @@
             if ($env:BOND_BUILD -eq "C# .NET Core") {
 
                 & cs\dnc\build.ps1 -Test -Configuration $env:BOND_CONFIG -Verbosity minimal -MSBuildLogger "C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-                if (-not $?) { throw "tests failed" }
+                if (-not $?) { throw "tests failed"  }
 
             }
 
