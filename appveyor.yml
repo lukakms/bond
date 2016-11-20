@@ -76,6 +76,8 @@
             
             $value = "C:\Program Files\Haskell Platform\2014.2.0.0"
             
+            New-Item -Path $registryPath -Force | Out-Null
+            
             New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
 
             cabal update
@@ -105,6 +107,8 @@
 
             }
             
+            $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+            
             $env:Path = "C:\Program Files\Haskell Platform\2014.2.0.0\mingw\bin;C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin;C:\Program Files\Haskell Platform\2014.2.0.0\bin;${env:Path}"
             
             if ($env:BOND_BUILD -eq "Python") {
@@ -112,8 +116,6 @@
                 mkdir build
 
                 cd build
-
-                Wait-Process -name boost
 
                 cmake "-DBoost_ADDITIONAL_VERSIONS=1.${env:BOND_BOOST}.0" -G $env:BOND_VS ..
 
@@ -151,6 +153,8 @@
             $env:PreferredToolArchitecture = "x64"
 
             $env:_IsNativeEnvironment = "true"
+            
+            $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
             
             $env:Path = "C:\Program Files\Haskell Platform\2014.2.0.0\mingw\bin;C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin;C:\Program Files\Haskell Platform\2014.2.0.0\bin;${env:Path}"
 
