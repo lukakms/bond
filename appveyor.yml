@@ -64,9 +64,17 @@
 
             $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
             
-            $env:Path = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin;C:\Program Files\Haskell Platform\2014.2.0.0\bin;${env:Path}"
+            $env:Path = "C:\Program Files\Haskell Platform\2014.2.0.0\mingw\bin;C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin;C:\Program Files\Haskell Platform\2014.2.0.0\bin;${env:Path}"
             
             $env:CABAL_PATH = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin"
+            
+            $registryPath = "HKLM:\Software\Haskell\Haskell Platform\2014.2.0.0"
+            
+            $Name = "InstallDir"
+            
+            $value = "C:\Program Files\Haskell Platform\2014.2.0.0"
+            
+            New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
 
             cabal update
 
