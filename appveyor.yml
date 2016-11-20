@@ -104,6 +104,10 @@
                 nuget restore cs\cs.sln
 
             }
+                        
+            $env:CABAL_PATH = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin"
+            
+            $env:Haskell_CABAL_EXECUTABLE = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin\cabal.exe"
 
             if ($env:BOND_BUILD -eq "Python") {
 
