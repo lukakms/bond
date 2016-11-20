@@ -105,11 +105,7 @@
 
             }
             
-            $env:Path = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin;C:\Program Files\Haskell Platform\2014.2.0.0\bin;${env:Path}"
-                        
-            $env:CABAL_PATH = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin"
-            
-            $env:Haskell_CABAL_EXECUTABLE = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin\cabal.exe"
+            $env:Path = "C:\Program Files\Haskell Platform\2014.2.0.0\mingw\bin;C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin;C:\Program Files\Haskell Platform\2014.2.0.0\bin;${env:Path}"
 
             if ($env:BOND_BUILD -eq "Python") {
 
