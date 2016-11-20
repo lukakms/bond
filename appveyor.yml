@@ -95,9 +95,9 @@
     cache:
         - cs\packages -> cs\test\core\packages.config
         - compiler\.cabal-sandbox -> compiler\bond.cabal
-        - C:\ProgramData\chocolatey\bin
-        - C:\ProgramData\chocolatey\lib
-        - C:\Program Files\Haskell Platform
+        - C:\ProgramData\chocolatey\bin -> .travis.yml
+        - C:\ProgramData\chocolatey\lib -> .travis.yml
+        - C:\Program Files\Haskell Platform -> .travis.yml
 
     before_build:
         - ps: >-
