@@ -104,6 +104,8 @@
                 nuget restore cs\cs.sln
 
             }
+            
+            $env:Path = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin;C:\Program Files\Haskell Platform\2014.2.0.0\bin;${env:Path}"
                         
             $env:CABAL_PATH = "C:\Program Files\Haskell Platform\2014.2.0.0\lib\extralibs\bin"
             
